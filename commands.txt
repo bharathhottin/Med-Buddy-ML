@@ -1,0 +1,4 @@
+nohup uvicorn Backend.main:app --host 0.0.0.0 --port 8000 > uvicorn.log 2>&1 &
+
+nohup streamlit run Frontend/app.py --server.address 0.0.0.0 --server.port 8501 > streamlit.log 2>&1 &
+
